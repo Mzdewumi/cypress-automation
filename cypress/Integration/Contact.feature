@@ -21,9 +21,9 @@ Scenario: Verify that Message can be sent when logged in
     When I enter valid login details
     When I click the contact button
     When I should see a New Message tag
-   When I enter the contact email
-   When I enter the contact name
-   When I enter the Message
-   When I click on Send Message
-   Then The Message is successful
+    When I enter the contact email
+    When I enter the contact name
+    When I enter the Message
+    When I click on Send Message
+    Then The Message is successful
 
