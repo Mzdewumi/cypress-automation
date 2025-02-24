@@ -18,6 +18,6 @@
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
-    "@cypress/browserify-preprocessor": "latest"
+    "@cypress/browserify-preprocessor": "^3.0.2"
   }
 }
