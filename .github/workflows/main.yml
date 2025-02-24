@@ -23,3 +23,7 @@ jobs:
       run: npx cypress run --config-file=cypress.config.js --record true --key ${{ secrets.CYPRESS_RECORD_KEY }}
       env:
         CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+    
+    - name: Cleanup orphan processes
+      run: |
+        kill $(ps -ef | grep 'cypress' | awk '{print $2}')
