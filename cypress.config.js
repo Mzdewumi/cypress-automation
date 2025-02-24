@@ -27,7 +27,7 @@ module.exports = defineConfig({
   },
 
   e2e: {
-    specPattern: "cypress/integration/**/*.feature",
+    specPattern: "cypress/integration/*.feature",
     setupNodeEvents,
   },
 });
